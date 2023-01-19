@@ -1,0 +1,137 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+nav {
+  border-bottom: solid;
+  border-color: #dddddd;
+  border-width: 2px;
+
+  position: relative;
+  background-color: #f4f4f4;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height: 60px; /* TODO: don't hardcode */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: rgb(255, 255, 255);
+  color: orange;
+}
+
+.logo {
+  margin: 20px;
+}
+
+.beginning {
+  display: flex;
+
+  height: calc(100vh - 60px);
+}
+
+.image-section {
+  min-width: 550px;
+  width: 65%;
+
+  background-color: #f4f4f4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 80%;
+}
+
+.info {
+  padding: 20px;
+}
+
+.navigator {
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.navigator > a {
+  text-decoration: none;
+  color: gray;
+  white-space: initial;
+}
+.navigator > a:hover {
+  border-bottom: 2px solid gray;
+}
+
+.price {
+  font-size: 1.6rem;
+  margin-bottom: 0px;
+}
+.price-monthly {
+  margin-top: 8px;
+}
+.price-monthly > span {
+  font-size: 0.9rem;
+  color: gray;
+  border-bottom: 2px solid gray;
+}
+.price-monthly:hover > span {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.reviews {
+  border-bottom: 2px solid black;
+}
+.reviews:hover {
+  border-bottom: 2px solid orange;
+  color: orange;
+}
+
+.shortdescription {
+  max-width: 350px;
+  line-height: 2;
+  padding: 10px;
+
+  border-style: solid;
+  border-radius: 12px;
+  border-color: #f4f4f4;
+  background-color: #f4f4f4;
+}
+
+.group > p {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
